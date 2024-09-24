@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Select Your Car | RENTAL</title>
+</head>
+<body>
+    <header>
+        <h1>Select Your Car</h1>
+    </header>
+    <main>
+        <section class="car-selection">
+            <h2>Available Cars</h2>
+            <div class="car-grid">
+                <div class="car-card">
+                    <img src="images/car4.jpg" alt="Car 1">
+                    <h3>Luxury Sedan</h3>
+                    <p>Rental Amount: 1900 rupees/day</p>
+                    <p>Contact: 9121841817</p>
+                    <button class="btn" onclick="bookCar('Luxury Sedan', 100)">Book Now</button>
+                </div>
+                <div class="car-card">
+                    <img src="images/car6.jpg" alt="Car 2">
+                    <h3>SUV</h3>
+                    <p>Rental Amount: 1500 rupees/day</p>
+                    <p>Contact: 9121841817</p>
+                    <button class="btn" onclick="bookCar('SUV', 120)">Book Now</button>
+                </div>
+                <div class="car-card">
+                    <img src="images/car5.png" alt="Car 3">
+                    <h3>Convertible</h3>
+                    <p>Rental Amount: 1700 rupees/day</p>
+                    <p>Contact: 9701313138</p>
+                    <button class="btn" onclick="bookCar('Convertible', 150)">Book Now</button>
+                </div>
+                <div class="car-card">
+                    <img src="images/car3.jpg" alt="Car 4">
+                    <h3>Electric Car</h3>
+                    <p>Rental Amount: 1800 rupees/day</p>
+                    <p>Contact: 9849777047</p>
+                    <button class="btn" onclick="bookCar('Electric Car', 130)">Book Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="payment-option" id="payment-section" style="display:none;">
+            <h2>Payment Options</h2>
+            <form id="payment-form" onsubmit="handlePayment(event)">
+                <div class="input__group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" name="card-number" id="card-number" required placeholder="Enter your card number">
+                </div>
+                <div class="input__group">
+                    <label for="expiry-date">Expiry Date</label>
+                    <input type="text" name="expiry-date" id="expiry-date" required placeholder="MM/YY">
+                </div>
+                <div class="input__group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" name="cvv" id="cvv" required placeholder="Enter CVV">
+                </div>
+                <button type="submit" class="btn">Confirm Booking</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        let selectedCar;
+        let rentalAmount;
+
+        function bookCar(carName, amount) {
+            selectedCar = carName;
+            rentalAmount = amount;
+
+            // Display payment section
+            document.getElementById('payment-section').style.display = 'block';
+            alert(`You have selected ${selectedCar} for $${rentalAmount}/day`);
+        }
+
+        function handlePayment(event) {
+            event.preventDefault(); // Prevent normal form submission
+            alert(`Payment for ${selectedCar} of $${rentalAmount}/day has been confirmed!`);
+            // Redirect to the rent page or confirmation page
+            window.location.href = 'rent.html';
+        }
+    </script>
+</body>
+</html>

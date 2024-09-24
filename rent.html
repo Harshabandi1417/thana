@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Rent a Car | RIDX</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <a href="#">RIDX</a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="ride.html">Ride</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav__btn">
+                <button class="btn">Get Started</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Car Rental System</h1>
+
+        <!-- Car Section with Images, Prices, and Conditions -->
+        <section>
+            <h2>Available Cars for Rent</h2>
+            <div class="car__list">
+                <!-- Car 1 -->
+                <div class="car__item">
+                    <img src="images/car1.jpeg" alt="Sedan Car" class="car__image" />
+                    <h3>Sedan</h3>
+                    <p><strong>Price:</strong> $50/day</p>
+                    <p><strong>Condition:</strong> Excellent, regularly serviced</p>
+                    <button class="btn">Rent Now</button>
+                </div>
+
+                <!-- Car 2 -->
+                <div class="car__item">
+                    <img src="images/car2.jpeg" alt="SUV Car" class="car__image" />
+                    <h3>SUV</h3>
+                    <p><strong>Price:</strong> $80/day</p>
+                    <p><strong>Condition:</strong> Perfect for off-road and family trips, well-maintained</p>
+                    <button class="btn">Rent Now</button>
+                </div>
+
+                <!-- Car 3 -->
+                <div class="car__item">
+                    <img src="images/car3.jpg" alt="Luxury Car" class="car__image" />
+                    <h3>Luxury</h3>
+                    <p><strong>Price:</strong> $150/day</p>
+                    <p><strong>Condition:</strong> Top of the line, in pristine condition</p>
+                    <button class="btn">Rent Now</button>
+                </div>
+
+                <!-- Additional Cars -->
+                <!-- Car 4 -->
+                <div class="car__item">
+                    <img src="images/car4.jpg" alt="Convertible Car" class="car__image" />
+                    <h3>Convertible</h3>
+                    <p><strong>Price:</strong> $120/day</p>
+                    <p><strong>Condition:</strong> Stylish and fun for sunny days</p>
+                    <button class="btn">Rent Now</button>
+                </div>
+
+                <!-- Car 5 -->
+                <div class="car__item">
+                    <img src="images/car9.jpg" alt="Pickup Truck" class="car__image" />
+                    <h3>Pickup Truck</h3>
+                    <p><strong>Price:</strong> $90/day</p>
+                    <p><strong>Condition:</strong> Great for transporting goods, well-maintained</p>
+                    <button class="btn">Rent Now</button>
+                </div>
+
+                <!-- Car 6 -->
+                <div class="car__item">
+                    <img src="images/car6.jpg" alt="Hatchback Car" class="car__image" />
+                    <h3>Hatchback</h3>
+                    <p><strong>Price:</strong> $40/day</p>
+                    <p><strong>Condition:</strong> Compact and fuel-efficient</p>
+                    <button class="btn">Rent Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section>
+            <h2>How Our Rental System Works</h2>
+            <p>RIDX offers a flexible and convenient car rental service. Whether you need a car for a few hours, days, or even weeks, we’ve got you covered. Here’s how it works:</p>
+            <ol>
+                <li>Choose your vehicle from our fleet above.</li>
+                <li>Select your rental period (hourly, daily, or weekly).</li>
+                <li>Complete the booking through our secure platform.</li>
+                <li>Pick up your car from the nearest RIDX location or have it delivered.</li>
+                <li>Enjoy your ride! Return the car at any RIDX location when done.</li>
+            </ol>
+        </section>
+
+        <!-- Pricing Section -->
+        <section>
+            <h2>Rental Pricing</h2>
+            <p>Our pricing is transparent with no hidden fees. All prices include taxes, and you can rent cars by the hour, day, or week.</p>
+            <table class="pricing__table">
+                <thead>
+                    <tr>
+                        <th>Car Type</th>
+                        <th>Hourly Rate</th>
+                        <th>Daily Rate</th>
+                        <th>Weekly Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sedan</td>
+                        <td>$10/hour</td>
+                        <td>$50/day</td>
+                        <td>$300/week</td>
+                    </tr>
+                    <tr>
+                        <td>SUV</td>
+                        <td>$15/hour</td>
+                        <td>$80/day</td>
+                        <td>$500/week</td>
+                    </tr>
+                    <tr>
+                        <td>Luxury</td>
+                        <td>$25/hour</td>
+                        <td>$150/day</td>
+                        <td>$900/week</td>
+                    </tr>
+                    <tr>
+                        <td>Convertible</td>
+                        <td>$20/hour</td>
+                        <td>$120/day</td>
+                        <td>$750/week</td>
+                    </tr>
+                    <tr>
+                        <td>Pickup Truck</td>
+                        <td>$15/hour</td>
+                        <td>$90/day</td>
+                        <td>$600/week</td>
+                    </tr>
+                    <tr>
+                        <td>Hatchback</td>
+                        <td>$8/hour</td>
+                        <td>$40/day</td>
+                        <td>$250/week</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__container">
+            <h3>RIDX</h3>
+            <div class="footer__socials">
+                <a href="#"><i class="ri-facebook-line"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-twitter-line"></i></a>
+            </div>
+            <p>&copy; 2024 RIDX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

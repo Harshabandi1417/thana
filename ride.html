@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Our Cars | RIDX</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        nav .btn {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Main Styles */
+        main {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* Fleet Grid for Car Images */
+        .fleet-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .fleet-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Car Details List */
+        .car-details ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 18px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* Footer Styles */
+        footer h3 {
+            margin-bottom: 20px;
+        }
+
+        footer .footer__socials a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .fleet-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav__logo">
+                <a href="#" style="font-size: 24px; color: white;">RIDX</a>
+            </div>
+            <ul class="nav__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="ride.html">Ride</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav__btn">
+                <button class="btn">Get Started</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Cars</h1>
+
+        <section>
+            <h2>Fleet Overview</h2>
+            <p>Our fleet includes a range of vehicles suitable for every need. Choose from compact cars for city driving, SUVs for family trips, or luxury vehicles for special occasions.</p>
+        </section>
+
+        <section>
+            <h2>Popular Models</h2>
+            <div class="fleet-grid">
+                <div>
+                    <img src="images/car7.webp" alt="Toyota Corolla">
+                    <h3>Toyota Corolla</h3>
+                    <p>A reliable and fuel-efficient sedan perfect for city driving.</p>
+                </div>
+                <div>
+                    <img src="images/car8.webp" alt="Ford Explorer">
+                    <h3>Ford Explorer</h3>
+                    <p>A spacious and powerful SUV ideal for road trips and family travel.</p>
+                </div>
+                <div>
+                    <img src="images/car9.jpg" alt="Mercedes-Benz E-Class">
+                    <h3>Mercedes-Benz E-Class</h3>
+                    <p>A luxury sedan offering comfort and performance for high-end travel.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="car-details">
+            <h2>Maintenance and Safety</h2>
+            <p>At RIDX, safety is our top priority. Each vehicle undergoes routine maintenance to ensure it is in perfect condition for your journey.</p>
+            <ul>
+                <li>Regular servicing and oil changes.</li>
+                <li>Tire checks and replacement.</li>
+                <li>Interior and exterior cleaning before each rental.</li>
+                <li>24/7 roadside assistance in case of any issues.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <h3>RIDX</h3>
+        <div class="footer__socials">
+            <a href="#"><i class="ri-facebook-line"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-twitter-line"></i></a>
+        </div>
+        <p>&copy; 2024 RIDX. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
